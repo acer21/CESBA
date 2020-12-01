@@ -1,38 +1,75 @@
 body{
-    background-color: rgb(0 58 112);
-}
-/*-------------------------------------*/
-.element{
-    border: 1px solid black;
-    margin-right:2%;
-}
-.container {
-    display: grid;
-    width: 100%;
-    height: 98vh;
-    grid-template-rows:repeat(4, 25%);
-    grid-template-columns: repeat(4, 25%);
-    grid-gap: 5px;
+    background:#003a70;
+    margin:0px;
 }
 
-.header{
-    grid-row:1/2;
-    grid-column:1/5;
-    font-family:Verdana;
-    text-align: center;
-    background-color: rgb(0 58 112);
+
+.form{
+    width:340px;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -2px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative;
 }
 
-.content{
-    grid-row:2/4;
-    grid-column:1/5;background-color: rgb(255 109 7);
+
+h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#E24F00;
+    border-bottom:3px solid #E24F00;
 }
 
-.footer{
-    grid-row:4/5;
-    grid-column:1/5;
-    background-color: rgb(255 109 7);
+
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .5s;
+    border-bottom:2px solid #bebed2;
 }
-/*-------------------------------------*/
 
 
+input:focus{
+    border-bottom:2px solid #0E971D;
+}
+
+
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a;
+}
+
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #003a70;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+}
+
+
+button:hover{
+    background:#E24F00;
+    color:#fff;
+}
