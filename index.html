@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Final</title>
 </head>
 <body>
-<form class="form" action="redireccion.html">
+<form class="form" action="" method="post" name="formulario">
     <h2>REGISTRATE</h2>
-    <p type="Nombre:"><input placeholder="Tu nombre completo aca"></input></p>
-    <p type="Email:"><input placeholder="Tu correo electronico aquí"></input></p>
-    <p type="Contraseña"><input placeholder="Escoge una contraseña"></input></p>
-    <button>REGISTRAME</button>
+    <p type="Nombre:"><input type="text" name="nombre" id="nombre" placeholder="Tu nombre completo aca"></input></p>
+    <p type="Email:"><input type="text" name="email" id="email" placeholder="Tu correo electronico aquí"></input></p>
+    <p type="Contraseña"><input type="text" name="password" id="password" placeholder="Escoge una contraseña"></input></p>
+    <p><input type="button" name="grabar" id="grabar" value="REGISTRARME"></p>
 </form>
+<section id="cajadatos">
+    No hay informacion disponible
+</section>
 </body>
 </html>
