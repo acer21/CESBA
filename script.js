@@ -1,6 +1,7 @@
     function iniciar(){
         var boton=document.getElementById('grabar');
         boton.addEventListener('click',nuevoitem,false);
+        window.addEventListener("storage",mostrar,false);
         mostrar();
     }
 
