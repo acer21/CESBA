@@ -7,20 +7,19 @@
     function nuevoitem(){
         var nombre=document.getElementById('nombre').value;
         var email=document.getElementById('email').value;
-        sessionStorage.setItem(nombre,email);
+        localStorage.setItem(nombre,email);
         mostrar();
         document.getElementById('nombre').value='';
         document.getElementById('email').value='';
-        document.getElementById('password').value='';
     }
 
     function mostrar(){
         var cajadatos=document.getElementById('cajadatos');
         cajadatos.innerHTML='';
-        for (var i=0;i<sessionStorage.length;i++)
+        for (var i=0;i<localStorage.length;i++)
             {
-                var nombre=sessionStorage.key(i);
-                var email=sessionStorage.getItem(nombre);
+                var nombre=localStorage.key(i);
+                var email=localStorage.getItem(nombre);
                 cajadatos.innerHTML='<div>'+nombre+' - '+email+'</div>';
             }
         }
